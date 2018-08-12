@@ -15,8 +15,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gye-W1-YSs"/>
-                        <viewControllerLayoutGuide type="bottom" id="ANh-d2-tdb"/>
+                        <viewControllerLayoutGuide type="top" id="ot2-1n-MrX"/>
+                        <viewControllerLayoutGuide type="bottom" id="2zQ-vZ-NFd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -37,8 +37,8 @@
             <objects>
                 <viewController id="sva-7d-2gb" customClass="ChatVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hFT-zN-l2K"/>
-                        <viewControllerLayoutGuide type="bottom" id="43n-uA-tUu"/>
+                        <viewControllerLayoutGuide type="top" id="3fv-3z-Ajc"/>
+                        <viewControllerLayoutGuide type="bottom" id="apu-1d-hp1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fpT-nC-vpD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -71,10 +71,31 @@
                                     <constraint firstAttribute="bottom" secondItem="PBP-ad-Jzs" secondAttribute="bottom" constant="12" id="zho-3O-JCe"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5D-LZ-cZp">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KaB-px-aN3"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-Q5-QES">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="sva-7d-2gb" eventType="touchUpInside" id="0fK-Pa-mcc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="C5D-LZ-cZp" secondAttribute="trailing" id="22V-8W-U0h"/>
+                            <constraint firstItem="Daa-Q5-QES" firstAttribute="centerY" secondItem="C5D-LZ-cZp" secondAttribute="centerY" id="4Hu-dI-16B"/>
+                            <constraint firstAttribute="trailing" secondItem="Daa-Q5-QES" secondAttribute="trailing" constant="8" id="TI7-Ow-Qx5"/>
                             <constraint firstItem="0UI-HG-93Z" firstAttribute="leading" secondItem="fpT-nC-vpD" secondAttribute="leading" id="aHE-Ui-QPT"/>
+                            <constraint firstItem="C5D-LZ-cZp" firstAttribute="leading" secondItem="fpT-nC-vpD" secondAttribute="leading" id="d3H-AT-9G7"/>
+                            <constraint firstItem="apu-1d-hp1" firstAttribute="top" secondItem="C5D-LZ-cZp" secondAttribute="bottom" id="soO-vu-hbU"/>
                             <constraint firstItem="0UI-HG-93Z" firstAttribute="trailing" secondItem="fpT-nC-vpD" secondAttribute="trailing" id="u2l-e3-tZo"/>
                             <constraint firstItem="0UI-HG-93Z" firstAttribute="top" secondItem="fpT-nC-vpD" secondAttribute="top" id="wyv-gp-eMP"/>
                         </constraints>
@@ -82,6 +103,7 @@
                     <connections>
                         <outlet property="channelNameLbl" destination="zzX-t6-kmB" id="yiI-Kx-3NC"/>
                         <outlet property="menuBtn" destination="PBP-ad-Jzs" id="HiZ-vl-ivk"/>
+                        <outlet property="messageTxtBox" destination="C5D-LZ-cZp" id="yHJ-Yn-ztD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnL-Wy-oX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,8 +115,8 @@
             <objects>
                 <viewController id="o6O-Mh-AhB" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="siA-ce-TcY"/>
-                        <viewControllerLayoutGuide type="bottom" id="dvo-4B-2mu"/>
+                        <viewControllerLayoutGuide type="top" id="0qv-mE-18O"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rh0-G9-xyO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0v5-IH-czC" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -176,8 +198,8 @@
                             <constraint firstAttribute="trailing" secondItem="SgK-EW-KNA" secondAttribute="trailing" id="Rnm-fg-Uxa"/>
                             <constraint firstAttribute="trailing" secondItem="Wk7-wf-0h3" secondAttribute="trailing" constant="72" id="aLS-v1-cLK"/>
                             <constraint firstItem="AUI-FG-sBR" firstAttribute="top" secondItem="VFJ-0W-ye4" secondAttribute="bottom" constant="33" id="dym-sp-aPO"/>
-                            <constraint firstItem="VFJ-0W-ye4" firstAttribute="top" secondItem="siA-ce-TcY" secondAttribute="bottom" constant="24" id="hc1-fn-x39"/>
-                            <constraint firstItem="dvo-4B-2mu" firstAttribute="top" secondItem="MUD-v1-zgr" secondAttribute="bottom" constant="20" id="j3j-7L-haj"/>
+                            <constraint firstItem="VFJ-0W-ye4" firstAttribute="top" secondItem="0qv-mE-18O" secondAttribute="bottom" constant="24" id="hc1-fn-x39"/>
+                            <constraint firstItem="Rh0-G9-xyO" firstAttribute="top" secondItem="MUD-v1-zgr" secondAttribute="bottom" constant="20" id="j3j-7L-haj"/>
                             <constraint firstItem="SgK-EW-KNA" firstAttribute="leading" secondItem="0v5-IH-czC" secondAttribute="leading" id="jYn-We-dmb"/>
                             <constraint firstItem="Md7-Re-JZk" firstAttribute="top" secondItem="SgK-EW-KNA" secondAttribute="bottom" constant="20" id="r7u-ZF-2TV"/>
                             <constraint firstItem="Md7-Re-JZk" firstAttribute="centerY" secondItem="MUD-v1-zgr" secondAttribute="centerY" id="rGr-67-M6n"/>
@@ -206,8 +228,8 @@
             <objects>
                 <viewController id="OBt-3P-HcC" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7wB-Qo-cCm"/>
-                        <viewControllerLayoutGuide type="bottom" id="XWj-aL-e3L"/>
+                        <viewControllerLayoutGuide type="top" id="daT-10-q8x"/>
+                        <viewControllerLayoutGuide type="bottom" id="RJJ-4i-kqU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f8u-Ig-d9U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -319,8 +341,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zmY-LW-SFa" firstAttribute="top" secondItem="lQ0-s7-SlR" secondAttribute="bottom" constant="40" id="5ql-93-BjT"/>
-                            <constraint firstItem="MeP-Qw-g86" firstAttribute="top" secondItem="7wB-Qo-cCm" secondAttribute="bottom" constant="60" id="NZ2-wz-AEO"/>
-                            <constraint firstItem="fdC-5f-vZX" firstAttribute="top" secondItem="7wB-Qo-cCm" secondAttribute="bottom" constant="8" id="UIL-9p-7q5"/>
+                            <constraint firstItem="MeP-Qw-g86" firstAttribute="top" secondItem="daT-10-q8x" secondAttribute="bottom" constant="60" id="NZ2-wz-AEO"/>
+                            <constraint firstItem="fdC-5f-vZX" firstAttribute="top" secondItem="daT-10-q8x" secondAttribute="bottom" constant="8" id="UIL-9p-7q5"/>
                             <constraint firstItem="ydP-Yq-MHH" firstAttribute="centerX" secondItem="f8u-Ig-d9U" secondAttribute="centerX" id="VSu-R9-10O"/>
                             <constraint firstItem="zmY-LW-SFa" firstAttribute="centerX" secondItem="f8u-Ig-d9U" secondAttribute="centerX" id="d2w-p2-dVO"/>
                             <constraint firstItem="Ykm-AJ-FLc" firstAttribute="top" secondItem="zmY-LW-SFa" secondAttribute="bottom" id="hIJ-3Z-j0e"/>
@@ -349,8 +371,8 @@
             <objects>
                 <viewController id="m3w-Cq-1sb" customClass="CreateAccountVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7YJ-7t-bCf"/>
-                        <viewControllerLayoutGuide type="bottom" id="oLx-K0-Eoh"/>
+                        <viewControllerLayoutGuide type="top" id="3oW-QP-xGc"/>
+                        <viewControllerLayoutGuide type="bottom" id="CQ2-Jj-9I9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iEh-gL-Chg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -493,15 +515,15 @@
                             <constraint firstItem="nil-q6-aRa" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="90h-Kf-gSn"/>
                             <constraint firstItem="E5f-ww-wWG" firstAttribute="top" secondItem="dPN-QS-T6W" secondAttribute="bottom" constant="40" id="FbD-og-E59"/>
                             <constraint firstItem="D9A-jU-Fag" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="Fq8-nu-wfv"/>
-                            <constraint firstItem="q31-ZW-Gyc" firstAttribute="top" secondItem="7YJ-7t-bCf" secondAttribute="bottom" constant="8" id="GaL-MI-VIB"/>
+                            <constraint firstItem="q31-ZW-Gyc" firstAttribute="top" secondItem="3oW-QP-xGc" secondAttribute="bottom" constant="8" id="GaL-MI-VIB"/>
                             <constraint firstItem="D9A-jU-Fag" firstAttribute="centerY" secondItem="iEh-gL-Chg" secondAttribute="centerY" constant="-100" id="InQ-BL-3Fe"/>
                             <constraint firstItem="6vp-9l-RSq" firstAttribute="top" secondItem="nil-q6-aRa" secondAttribute="top" id="JC9-ot-qtD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q31-ZW-Gyc" secondAttribute="trailing" id="JnW-hm-scX"/>
-                            <constraint firstItem="dPN-QS-T6W" firstAttribute="top" secondItem="7YJ-7t-bCf" secondAttribute="bottom" constant="40" id="KXF-8S-unw"/>
+                            <constraint firstItem="dPN-QS-T6W" firstAttribute="top" secondItem="3oW-QP-xGc" secondAttribute="bottom" constant="40" id="KXF-8S-unw"/>
                             <constraint firstItem="E5f-ww-wWG" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="Lgt-4o-QAN"/>
                             <constraint firstItem="hTU-X1-RHI" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="Q0D-6t-kEl"/>
                             <constraint firstItem="dPN-QS-T6W" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="bV9-hm-GxG"/>
-                            <constraint firstItem="oLx-K0-Eoh" firstAttribute="top" secondItem="hTU-X1-RHI" secondAttribute="bottom" constant="20" id="fkL-I2-png"/>
+                            <constraint firstItem="CQ2-Jj-9I9" firstAttribute="top" secondItem="hTU-X1-RHI" secondAttribute="bottom" constant="20" id="fkL-I2-png"/>
                             <constraint firstItem="PVU-0k-f2Q" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="hJO-ag-ije"/>
                             <constraint firstItem="6vp-9l-RSq" firstAttribute="width" secondItem="nil-q6-aRa" secondAttribute="width" id="m7J-DT-raM"/>
                             <constraint firstItem="6vp-9l-RSq" firstAttribute="centerX" secondItem="iEh-gL-Chg" secondAttribute="centerX" id="sSX-Yh-bs1"/>
@@ -528,8 +550,8 @@
             <objects>
                 <viewController id="6nO-PL-QSo" customClass="AvatarPickerVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VH9-CD-Bub"/>
-                        <viewControllerLayoutGuide type="bottom" id="fjp-XY-tyF"/>
+                        <viewControllerLayoutGuide type="top" id="fju-g9-OLt"/>
+                        <viewControllerLayoutGuide type="bottom" id="AcJ-Od-CQ7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="798-dM-ufe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -597,12 +619,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fjp-XY-tyF" firstAttribute="top" secondItem="PqO-Up-fkD" secondAttribute="bottom" id="JYk-wL-5f3"/>
+                            <constraint firstItem="AcJ-Od-CQ7" firstAttribute="top" secondItem="PqO-Up-fkD" secondAttribute="bottom" id="JYk-wL-5f3"/>
                             <constraint firstItem="PqO-Up-fkD" firstAttribute="leading" secondItem="798-dM-ufe" secondAttribute="leadingMargin" id="Pj3-Zt-hBz"/>
                             <constraint firstItem="PqO-Up-fkD" firstAttribute="top" secondItem="lZt-39-biu" secondAttribute="bottom" constant="20" id="TUW-JQ-A2w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PqO-Up-fkD" secondAttribute="trailing" id="asF-EK-JVx"/>
-                            <constraint firstItem="lZt-39-biu" firstAttribute="top" secondItem="VH9-CD-Bub" secondAttribute="bottom" constant="8" id="dEw-pF-t0e"/>
-                            <constraint firstItem="YBl-QQ-8Z9" firstAttribute="top" secondItem="VH9-CD-Bub" secondAttribute="bottom" constant="8" id="gs5-PA-U4A"/>
+                            <constraint firstItem="lZt-39-biu" firstAttribute="top" secondItem="fju-g9-OLt" secondAttribute="bottom" constant="8" id="dEw-pF-t0e"/>
+                            <constraint firstItem="YBl-QQ-8Z9" firstAttribute="top" secondItem="fju-g9-OLt" secondAttribute="bottom" constant="8" id="gs5-PA-U4A"/>
                             <constraint firstItem="YBl-QQ-8Z9" firstAttribute="centerX" secondItem="798-dM-ufe" secondAttribute="centerX" id="puy-TS-cby"/>
                         </constraints>
                     </view>
@@ -621,6 +643,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
