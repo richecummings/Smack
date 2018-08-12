@@ -28,6 +28,7 @@
 		90AC94EB208E779F00CE2479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90AC94E9208E779F00CE2479 /* LaunchScreen.storyboard */; };
 		90DA077B2120AC7D00A9362D /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA077A2120AC7D00A9362D /* MessageService.swift */; };
 		90DA077D2120ACAA00A9362D /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA077C2120ACAA00A9362D /* Channel.swift */; };
+		90DA077F2120B2B400A9362D /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA077E2120B2B400A9362D /* ChannelCell.swift */; };
 		96519E568888C3434AEF6EE5 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1007FA6AEDAA7D23F6EF9F12 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		90AC94EC208E779F00CE2479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90DA077A2120AC7D00A9362D /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		90DA077C2120ACAA00A9362D /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		90DA077E2120B2B400A9362D /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		9896B64761E7C23C1D399E13 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				9082F8342118E6FA001955BA /* RoundedButton.swift */,
 				9082F83A21190319001955BA /* AvatarCell.swift */,
 				9082F83C21191318001955BA /* CircleImage.swift */,
+				90DA077E2120B2B400A9362D /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907480DD208E8B1300CD98AD /* ChannelVC.swift in Sources */,
+				90DA077F2120B2B400A9362D /* ChannelCell.swift in Sources */,
 				9082F8392118FCC7001955BA /* AvatarPickerVC.swift in Sources */,
 				9082F840211F5AD6001955BA /* ProfileVC.swift in Sources */,
 				9082F8352118E6FA001955BA /* RoundedButton.swift in Sources */,
