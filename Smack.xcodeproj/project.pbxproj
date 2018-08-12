@@ -34,6 +34,7 @@
 		90DA07852120BD4700A9362D /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA07842120BD4700A9362D /* SocketService.swift */; };
 		90DA07872120DFA700A9362D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA07862120DFA700A9362D /* Message.swift */; };
 		90DA07892120E91600A9362D /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA07882120E91600A9362D /* KeyboardBoundView.swift */; };
+		90DA078B2120EB9300A9362D /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DA078A2120EB9300A9362D /* MessageCell.swift */; };
 		96519E568888C3434AEF6EE5 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1007FA6AEDAA7D23F6EF9F12 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		90DA07842120BD4700A9362D /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		90DA07862120DFA700A9362D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		90DA07882120E91600A9362D /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		90DA078A2120EB9300A9362D /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		9896B64761E7C23C1D399E13 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				9082F83C21191318001955BA /* CircleImage.swift */,
 				90DA077E2120B2B400A9362D /* ChannelCell.swift */,
 				90DA07882120E91600A9362D /* KeyboardBoundView.swift */,
+				90DA078A2120EB9300A9362D /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				90DA077F2120B2B400A9362D /* ChannelCell.swift in Sources */,
 				9082F8392118FCC7001955BA /* AvatarPickerVC.swift in Sources */,
 				9082F840211F5AD6001955BA /* ProfileVC.swift in Sources */,
+				90DA078B2120EB9300A9362D /* MessageCell.swift in Sources */,
 				9082F8352118E6FA001955BA /* RoundedButton.swift in Sources */,
 				90DA07872120DFA700A9362D /* Message.swift in Sources */,
 				90DA077D2120ACAA00A9362D /* Channel.swift in Sources */,
